@@ -1,7 +1,7 @@
 services:
   mongodb:
     build: 
-      context: ./mongodb
+      context: ./monodb
       dockerfile: Dockerfile
     image: codebind97/mongodb:v1
     container_name: mongodb
