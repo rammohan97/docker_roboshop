@@ -1,0 +1,9 @@
+services:
+  mongodb:
+    image: mongodb:v1
+
+networks:
+  default:
+    driver: bridge
+    name: roboshop
+    external: true # True if you have already created the network, false if you want docker-compose to create it for you.
