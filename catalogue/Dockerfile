@@ -15,3 +15,8 @@ RUN chown -R roboshop:roboshop /opt/server
 USER roboshop
 CMD ["server.js"]
 ENTRYPOINT ["node"]
+LABEL com.project="roboshop" \
+      com.version="1.0" \
+      com.description="Catalogue Service"
+EXPOSE 8080
+
